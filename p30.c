@@ -1,30 +1,27 @@
-// cheak this code
+// cheak this code 
+// might be some issues
+
 #include<stdio.h>
 int main()
     {
-       int n;
+       int n,i;
        
        printf("enter the n\n");
        scanf("%d",&n);
        
-       for(int i=0;i<n;i++)
+       for(i=0;i<n;i++)
        {
-           for(int s=0;s<i;s++)
-           printf(" ");
-           
-           for(int j1=0;j1<1;j1++)
-           printf("*");
-           
-           for(int s1=0;s1<2*n-2*i-3;s1++)
-           printf("-");
-           
-           for(int j2=0;j2<1;j2++)
-           {
-            if(i==n-1)
-            break;
-            else
-            printf("*");
-           }
+          for (int s=0; s<i; s++)
+          printf(" ");
+          
+          printf("*");
+
+          for (int j=0 ; j< n-2*i+1; j++)
+          printf("-");
+
+          if (i+1<n)
+          printf("-*");
+
            printf("\n");
        }
        return 0;
