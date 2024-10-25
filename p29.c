@@ -1,3 +1,6 @@
+/*there is a bit error in this code*/
+
+
 #include<stdio.h>
 int main()
 {
